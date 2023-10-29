@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Tinos&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modal.css">
+</head>
+<body>
+    <header class="header header-mobile">
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
+                <div>
+                    <p class="logo-bold">
+                        Foundation
+                    </p>
+                    <p class="logo-regular">
+                        Startup landing template
+                    </p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <input class="checkbox" type="checkbox">
+                <div class="burger-menu__wrapper">
+                    <div class="burger-menu__line"></div>
+                    <div class="burger-menu__line"></div>
+                    <div class="burger-menu__line"></div>
+                </div>
+                <ul class="menu-ul">
+                    <li class="header-li">
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a href="#">
+                            Stories
+                        </a>
+                    </li>
+                </ul>
+                <div class="button-container__header">
+                    <button class="button">
+                        Get started
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="header">
+        <div class="container header-wrapper">
+            <div>
+                <h1 class="title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="header-text">
+                    Create live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div class="button-container">
+                        <button class="button">
+                            Get started
+                        </button>
+                        <button id="modal-button" class="button button-white">
+                            Learn More
+                        </button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/main-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container questions-container">
+            <div class="questions-item">
+                <span>
+                    What is it about?
+                </span>
+                <p>
+                    Building a website for a startup that looks amazing is not a rocket science anymore.
+                </p>
+            </div>
+            <div class="questions-item">
+                <span>
+                    Who is it for?
+                </span>
+                <p>
+                    Startups, small companies and teams, entrepreneurs and web developers.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="container logos-container">
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/nyt-logo.png" alt="NYT">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/forbes-logo.png" alt="Forbes">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/apple-logo.png" alt="Apple">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/mashable-logo.png" alt="Mashable">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/wsj-logo.png" alt="WSJ">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/google-logo.png" alt="Google">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container features-container">
+            <div>
+                <img src="./assets/img/features-img/eye.png">
+            </div>
+            <div>
+                <p class="text-mini text-mini__green">
+                    Features
+                </p>
+                <h3 class="title-inner">
+                    Easily find leads and customers
+                </h3>
+                <p class="text-inner">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+                <div class="open-block__container">
+                    <div class="open-block">
+                        <div class="toggleMargin">
+                            <div class="open-icon">
+                                <img src="./assets/img/features-img/compass.svg">
+                            </div>
+                            <p class="open-title">
+                                Acquire new customers
+                            </p>
+                        </div>
+                        <p class="open-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="open-block">
+                        <div>
+                            <div class="open-icon">
+                                <img src="./assets/img/features-img/house.svg">
+                            </div>
+                            <p class="open-title">
+                                Engage users
+                            </p>
+                        </div>
+                        <p class="open-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="open-block">
+                        <div>
+                            <div class="open-icon">
+                                <img src="./assets/img/features-img/organizer.svg">
+                            </div>
+                            <p class="open-title">
+                                Develop across platforms
+                            </p>
+                        </div>
+                        <p class="open-text">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/features-img/inSpace.png">
+            </div>
+        </div>
+    </section>
+    <section class="manage">
+        <div class="container manage-container">
+            <div class="manage-left">
+                <img class="manage-img" src="./assets/img/manage/wheel.png" alt="wheel"></img>
+            </div>
+            <div class="manage-right">
+                <p class="text-mini text-mini__orange">
+                    Team Inbox
+                </p>
+                <h3 class="title-inner">
+                    Manage conversations
+                </h3>
+                <p class="text-inner">
+                    One place to manage and respond to all conversations with leads and users. Receive messages from leads.
+                </p>
+                <div class="manage-block">
+                    <p class="manage-quote">
+                        “Great widgets. Great selection. Great design and <span>easy to implement</span>. Definitely a huge time saver for a web developer!”
+                    </p>
+                    <div class="user-flex">
+                        <div class="user-avatar">
+                            <img src="./assets/img/manage/user-avatar.png" alt="Viella Malkovich">
+                        </div>
+                        <div class="user-credits">
+                            <p class="manage-name">
+                                Viella Malkovich
+                            </p>
+                            <p class="manage-position">
+                                Creative Director at Johnson
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <section class="busy">
+        <div class="container busy-flex">
+            <div>
+                <p class="text-mini text-mini__blue">
+                    Communicate Better
+                </p>
+                <h3 class="title-inner">
+                    Built for busy small teams
+                </h3>
+                <p class="text-inner">
+                    Three products that can be used independently or combined together for your company’s needs.
+                </p>
+                <div>
+                    <button class="button">
+                        Get started
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/busy/1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <hr class="info-line">
+    <section class="info">
+        <div class="container info-flex">
+            <div>
+                <p class="info-p">
+                    <span>Subscriptions.</span> Foundation works with the tools and services you already use every day.
+                </p>
+                <div>
+                    <a class="info-link" href="#">
+                        Learn more about subscriptions
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="info-p">
+                    <span>Flexible Hours.</span> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+                </p>
+                <div>
+                    <a class="info-link" href="#">
+                        Get more info about hours
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="info-p">
+                   <span>Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data.
+                </p>
+                <div>
+                    <a class="info-link" href="#">
+                        Communication guidelines
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="audience">
+        <div class="container audience-container">
+            <p class="text-mini">
+                Engage Visitors
+            </p>
+            <h3 class="title-inner">
+                Understand your audience
+            </h3>
+            <p class="text-inner text-inner__wide">
+                Early stage company? Eligible applicants get all of our products for just $49 a month.
+            </p>
+            <div class="button-container">
+                <button class="button">
+                    Get started
+                </button>
+                <button class="button button-white">
+                    Learn More
+                </button>
+            </div>
+            <div class="cards-flex">
+                <div class="audience-card">
+                    <img src="./assets/img/audience-img/1.png" alt="">
+                    <p>
+                        Developers
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <img src="./assets/img/audience-img/2.png" alt="">
+                    <p>
+                        Entertainment
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <img src="./assets/img/audience-img/3.png" alt="">
+                    <p>
+                        Athletes
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <img src="./assets/img/audience-img/4.png" alt="">
+                    <p>
+                        Creators
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="container logos-container">
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/nyt-logo.png" alt="NYT">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/forbes-logo.png" alt="Forbes">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/apple-logo.png" alt="Apple">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/mashable-logo.png" alt="Mashable">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/wsj-logo.png" alt="WSJ">
+            </div>
+            <div class="logos-wrapper">
+                <img src="./assets/img/logos/google-logo.png" alt="Google">
+            </div>
+        </div>
+    </section>
+    <section class="carousel-section">
+        <div class="container carousel-section__container">
+            <p class="text-darkblue">
+                Trusted by the world’s most innovative businesses – big and small
+            </p>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <p class="carousel-text">
+                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                        </p>
+                        <div class="carousel-name">
+                            <p class="manage-name">
+                                Viella Malkovich
+                            </p>
+                            <p class="manage-position">
+                                Creative Director at Johnson
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="carousel-text">
+                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                        </p>
+                        <div class="carousel-name">
+                            <p class="manage-name">
+                                Viella Malkovich
+                            </p>
+                            <p class="manage-position">
+                                Creative Director at Johnson
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="carousel-text">
+                            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                        </p>
+                        <div class="carousel-name">
+                            <p class="manage-name">
+                                Viella Malkovich
+                            </p>
+                            <p class="manage-position">
+                                Creative Director at Johnson
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div>
+            <img src="./assets/img/balloon.png" alt="">
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about-container">
+                <h3 class="title-inner">
+                    We’re hiring
+                </h3>
+                <p class="text-inner">
+                    We’re a team of lifelong learners. We’re equal parts left and right brained.
+                </p>
+                <div>
+                    <button class="button">
+                        More about Company
+                    </button>
+                </div>
+            </div>
+            <div class="about-item__container">
+                <div class="about-items">
+                    <div>
+                        <p class="about-position">
+                            Front-End Developer
+                        </p>
+                            <p class="about-location">
+                                Los Angeles / Remote
+                            </p>
+                            <p class="about-icon">
+                                >
+                            </p>
+                    </div>
+                    <p>
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="about-items">
+                    <div>
+                        <p class="about-position">
+                            Community Manager
+                        </p>
+                            <p class="about-location">
+                                New York / Full-Time
+                            </p>
+                            <p class="about-icon">
+                                >
+                            </p>
+                        </div>
+                    <p>
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="about-items">
+                    <div>
+                        <p class="about-position">
+                            UX/UI Designer
+                        </p>
+                        <p class="about-location">
+                            New York / Full-Time
+                        </p>
+                        <p class="about-icon">
+                            >
+                        </p>
+                    </div>
+                    <p>
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grid-section">
+        <h4 class="title-inner">
+            All Surfaces Covered
+        </h4>
+        <p class="text-inner">
+            IOON kills bacteria on your hands, food, tables, laptops, you name it
+        </p>
+        <div class="grid">
+            <div class="container grid-container">
+                <img src="./assets/img/grid-img/apple-img.png" alt="">
+                <img src="./assets/img/grid-img/bus-img.png" alt="">
+                <img src="./assets/img/grid-img/human-img.png" alt="">
+                <img src="./assets/img/grid-img/hand-img.png" alt="">
+                <img src="./assets/img/grid-img/phone-img.png" alt="">
+                <img src="./assets/img/grid-img/baby-img.png" alt="">
+                <img src="./assets/img/grid-img/dog-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bg-grey">
+        <div class="container free-flex">
+            <div>
+                <img class="animation-img" src="./assets/img/free/1.png" alt="">
+            </div>
+            <div>
+                <h4 class="free-title">
+                    Start your free trial.
+                </h4>
+                <p class="free-text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <form>
+                    <input placeholder="Enter your email" class="free-input" required type="text">
+                    <button class="button">
+                        Get Started
+                    </button>
+                </form>
+                <p class="subtext-lightgray">
+                    Free 14-day trial · Easy setup · Cancel any time. Check out 
+                    <a href="#">
+                        Terms of Use.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="logo logo-footer">
+                    <div>
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </div>
+                    <div>
+                        <p class="logo-bold">
+                            Foundation
+                        </p>
+                        <p class="logo-regular logo-regular__footer">
+                            Startup landing template
+                        </p>
+                    </div>
+                </div>
+                <p class="footer-info">
+                    Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                </p>
+                <div class="links-container">
+                    <img src="./assets/img/footer-icons/AppStore.svg">
+                    <img src="./assets/img/footer-icons/Google Play.svg">
+                </div>
+                <hr class="links-line">
+            </div>
+            <div class="footer-right">
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        Product
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Acquire Users 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Content Marketing
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Website Templates
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Customer Management
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Virtual Inbox
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        Company
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            About Foundation
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Brand Guidelines
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Press Kit
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-li__a" href="#">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container footer-container__down">
+            <div>
+                <p>
+                    <a class="subtext-lightgray footer-subtext" href="#">
+                        Terms
+                    </a>
+                </p>
+                <p>
+                    <a class="subtext-lightgray footer-subtext" href="#">
+                        Privacy
+                    </a>
+                </p>
+                <p>
+                    <a class="subtext-lightgray footer-subtext" href="#">
+                        License
+                    </a>
+                </p>
+            </div>
+            <div>
+                <img src="./assets/img/footer-icons/icon-twitter.svg" alt="">
+                <img src="./assets/img/footer-icons/icon-fb.svg" alt="">
+                <img src="./assets/img/footer-icons/LinkedIn.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="./assets/img/free/1.png">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quis fugiat distinctio consequatur provident nobis.
+                </p>
+            </div>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <div id="up">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+</body>
+</html>
